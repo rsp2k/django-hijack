@@ -81,8 +81,12 @@ Use may use the default template as a cheat-sheet. If you are experiencing troub
 please refer to Django's guide on [overriding templates][overriding-templates].
 
 ```html
+{% load i18n %}
+{% load hijack %}
+{% load static %}
+
 <!-- hijack/notification.html -->
-<link rel="stylesheet" type="text/css" href="{% static 'hijack/hijack.css' %}" media="screen">
+<link rel="stylesheet" type="text/css" href="{% static 'hijack/hijack.min.css' %}" media="screen">
 <div class="djhj" id="djhj">
   <div class="djhj-notification">
     <div class="djhj-message">
